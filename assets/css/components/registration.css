@@ -1,0 +1,222 @@
+.registration{
+    position:relative;
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    width:700px;
+    max-width:75%;
+    height:100%;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    -webkit-flex-direction:column;
+    -ms-flex-direction:column;
+    flex-direction:column;
+    -webkit-box-pack:center;
+    -webkit-justify-content:center;
+    -ms-flex-pack:center;
+    justify-content:center;
+    margin:0 auto
+}
+@media (max-width: 1180px){
+    .registration{
+        max-width:100%
+    }
+}
+.registration h2{
+    margin:0 0 20px 0;
+    font-size:30px;
+    text-align:center
+}
+.registration-request{
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    width:100%;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    -webkit-flex-direction:column;
+    -ms-flex-direction:column;
+    flex-direction:column;
+    -webkit-box-align:center;
+    -webkit-align-items:center;
+    -ms-flex-align:center;
+    align-items:center;
+    color:#fff
+}
+.registration-request input[type="submit"]{
+    width:400px;
+    max-width:100%;
+    line-height:50px;
+    font-size:16px;
+    font-weight:700;
+    text-transform:uppercase;
+    background-color:#8d008a;
+    border:none;
+    border-radius:0
+}
+.registration-request input[type="submit"]:focus{
+    outline:none
+}
+.registration-request--options{
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    width:100%;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    -webkit-flex-direction:column;
+    -ms-flex-direction:column;
+    flex-direction:column;
+    -webkit-box-align:center;
+    -webkit-align-items:center;
+    -ms-flex-align:center;
+    align-items:center;
+    margin:30px 0
+}
+.registration-request--options .options-a{
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    width:100%;
+    -webkit-box-pack:justify;
+    -webkit-justify-content:space-between;
+    -ms-flex-pack:justify;
+    justify-content:space-between
+}
+.registration-request--options .options-b{
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    width:72%;
+    -webkit-flex-wrap:wrap;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+    -webkit-justify-content:space-around;
+    -ms-flex-pack:distribute;
+    justify-content:space-around
+}
+.registration-request--options label{
+    display:block;
+    width:200px;
+    margin-bottom:30px;
+    line-height:50px;
+    font-size:16px;
+    font-weight:700;
+    text-align:center;
+    border:2px solid #fff;
+    cursor:pointer;
+    -webkit-transition:background-color .2s ease-in-out,border-color .2s ease-in-out;
+    transition:background-color .2s ease-in-out,border-color .2s ease-in-out
+}
+.registration-request--options label svg{
+    position:relative;
+    left:-5px;
+    width:0;
+    fill:#fff;
+    -webkit-transition:width .2s ease-in-out;
+    transition:width .2s ease-in-out
+}
+.registration-request--options input[type="checkbox"]{
+    display:none
+}
+.registration-request--options input[type="checkbox"]:checked+label{
+    background-color:#8d008a;
+    border-color:#8d008a
+}
+.registration-request--options input[type="checkbox"]:checked+label svg{
+    width:15px
+}
+.registration-request--information{
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    width:100%;
+    -webkit-box-pack:justify;
+    -webkit-justify-content:space-between;
+    -ms-flex-pack:justify;
+    justify-content:space-between;
+    margin-bottom:60px
+}
+.registration-request--information .information-name,.registration-request--information .information-email{
+    position:relative;
+    width:45%;
+    height:50px;
+    font-size:30px;
+    font-weight:300
+}
+.registration-request--information input[type="text"],.registration-request--information input[type="email"]{
+    width:100%;
+    padding:0 0 5px 0;
+    background-color:transparent;
+    border:none;
+    border-bottom:1px solid #fff;
+    border-radius:0
+}
+.registration-request--information input[type="text"]:focus,.registration-request--information input[type="email"]:focus{
+    outline:none;
+    background-color:#0c0c0c
+}
+.registration-request--information label{
+    position:absolute;
+    top:0;
+    left:0;
+    pointer-events:none;
+    -webkit-transition:top .2s ease-in-out,font-size .2s ease-in-out;
+    transition:top .2s ease-in-out,font-size .2s ease-in-out
+}
+.registration-request--information input:focus+label,.registration-request--information input.has-value+label{
+    top:-15px;
+    font-size:14px
+}
+@media (max-width: 767px){
+    .registration-request--options{
+        -webkit-box-orient:horizontal;
+        -webkit-box-direction:normal;
+        -webkit-flex-direction:row;
+        -ms-flex-direction:row;
+        flex-direction:row;
+        -webkit-justify-content:space-around;
+        -ms-flex-pack:distribute;
+        justify-content:space-around
+    }
+    .registration-request--options .options-a,.registration-request--options .options-b{
+        display:block;
+        width:auto
+    }
+}
+@media (max-width: 600px){
+    .registration-request--options{
+        margin:20px 0
+    }
+}
+@media (max-width: 600px) and (max-width: 415px){
+    .registration-request--options{
+        -webkit-box-pack:justify;
+        -webkit-justify-content:space-between;
+        -ms-flex-pack:justify;
+        justify-content:space-between
+    }
+}
+@media (max-width: 600px){
+    .registration-request--options label{
+        width:150px;
+        margin-bottom:15px;
+        font-size:14px
+    }
+    .registration-request--options input[type="checkbox"]:checked+label svg{
+        width:12px
+    }
+    .registration-request--information{
+        margin-bottom:30px
+    }
+    .registration-request--information .information-name,.registration-request--information .information-email{
+        height:40px;
+        font-size:24px
+    }
+}
