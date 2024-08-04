@@ -1,0 +1,39 @@
+/* CSS HEX */
+ --tamarillo: #94132c;
+--lola: #e9dde2;
+--lily: #caaebd;
+--bouquet: #b28899;
+--scarlet-gum: #571663;
+--blossom: #dcbcbc;
+--au-chico: #985570;
+--eunry: #cda6a4;
+--trendy-pink: #936896;
+--old-rose: #bc7474;
+
+
+/* SCSS HEX */
+$tamarillo: #94132c;
+$lola: #e9dde2;
+$lily: #caaebd;
+$bouquet: #b28899;
+$scarlet-gum: #571663;
+$blossom: #dcbcbc;
+$au-chico: #985570;
+$eunry: #cda6a4;
+$trendy-pink: #936896;
+$old-rose: #bc7474;
+
+
+/* SCSS RGB */
+--tamarillo: rgba(148,19,44,1);
+--lola: rgba(233,221,226,1);
+--lily: rgba(202,174,189,1);
+--bouquet: rgba(178,136,153,1);
+--scarlet-gum: rgba(87,22,99,1);
+--blossom: rgba(220,188,188,1);
+--au-chico: rgba(152,85,112,1);
+--eunry: rgba(205,166,164,1);
+--trendy-pink: rgba(147,104,150,1);
+--old-rose: rgba(188,116,116,1);
+
+
