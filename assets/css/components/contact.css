@@ -45,7 +45,7 @@
     padding:45px 45px;
     text-align:center;
     background-color:#0c0c0c;
-    box-shadow:0 0 30px 0 rgba(0,0,0,0.75)
+    box-shadow:0 0 30px 0 rgba(0,0,0,0.75);
 }
 .contact--lockup .modal--information p,.contact--lockup .modal--information a{
     display:block;
@@ -57,31 +57,12 @@
 .contact--lockup .modal--information p{
     margin-top:0
 }
-.contact--lockup .modal--options{
-    margin:0;
-    padding:0;
-    list-style:none
-}
-.contact--lockup .modal--options>li{
+.submit-btn{
     width:130px;
-    margin:0 auto 25px auto
-}
-.contact--lockup .modal--options li:nth-child(1){
-    background-color:#1769ff
-}
-.contact--lockup .modal--options li:nth-child(2){
-    background-color:#ea4c89
-}
-.contact--lockup .modal--options li:nth-child(3){
+    height: 40px;
+    margin:0 auto 25px auto;
     margin-bottom:0;
     background-color:#8d008a;
-    text-transform:uppercase
-}
-.contact--lockup .modal--options a{
-    display:block;
-    width:100%;
-    padding:8px 0;
-    text-decoration:none;
-    color:#fff;
-    font-weight:700
+    text-transform:uppercase;
+    border-radius: 5px;
 }
