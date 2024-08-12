@@ -53,7 +53,7 @@
     max-height: 360px;
     object-fit: cover;
     float: right;
-    margin-top: -10%;
+    margin-top: -15%;
   }
   .zoom-in {
     transition: transform 0.3s ease-in-out; /* Smooth zoom in */
@@ -106,7 +106,7 @@
   box-shadow: #f63853 0 3px 7px inset;
   transform: translateY(2px);
 }
-.sponsorship-container {
+.sponsorship_container {
   width: 80%; /* Adjust as needed */
   height: 100px; /* Adjust as needed */
   overflow: hidden;
@@ -132,17 +132,32 @@
   cursor: pointer;
 }
 
-@keyframes scrollSponsors {
+@-webkit-keyframes scrollSponsors {
   0% {
+      -webkit-transform: translateX(100%);
       transform: translateX(100%);
   }
   100% {
+      -webkit-transform: translateX(-100%);
       transform: translateX(-100%);
   }
 }
-.sponsorship-container:hover .sponsorship-scroller {
+
+@keyframes scrollSponsors {
+  0% {
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+  }
+  100% {
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+  }
+}
+
+.sponsorship_container:hover .sponsorship-scroller {
   animation-play-state: paused; /* Pause on hover */
 }
+
 .FAQcontainer{
     width: 45%;
     min-width: 500px;
