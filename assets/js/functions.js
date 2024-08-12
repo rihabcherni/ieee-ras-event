@@ -3,6 +3,7 @@
 $( document ).ready(function() {
 
   // DOMMouseScroll included for firefox support
+  
   var canScroll = true,
       scrollController = null;
   $(this).on('mousewheel DOMMouseScroll', function(e){

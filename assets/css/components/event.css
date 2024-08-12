@@ -1,30 +1,192 @@
-.event{
-    position:relative;
-    display:-webkit-box;
-    display:-webkit-flex;
-    display:-ms-flexbox;
-    display:flex;
-    width:960px;
-    max-width:80%;
-    height:100%;
-    -webkit-box-orient:vertical;
-    -webkit-box-direction:normal;
-    -webkit-flex-direction:column;
-    -ms-flex-direction:column;
-    flex-direction:column;
-    -webkit-box-pack:center;
-    -webkit-justify-content:center;
-    -ms-flex-pack:center;
-    justify-content:center;
-    margin:0 auto
-}
 @media (max-width: 1180px){
     .event{
         max-width:100%
     }
 }
-.event h2{
-    margin:0 0 20px 0;
-    font-size:30px;
-    text-align:center
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+.event div,.event img{
+  display: flex;
+  justify-content: space-between; /* Ensure space between text and image */
+  align-items: center; /* Align text and image vertically in the middle */
+  
 }
+.event h1{
+    font-size: 2em;
+    display: flex;
+    margin:5% auto;
+    justify-content: center;
+    text-decoration:underline;
+    
+    }
+.event-nav{
+    color: black;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    font-size: 120%;
+}
+.event-description{
+    max-width: 40%;
+    margin-top: 5%;
+    margin-left: 10%;
+    text-align: left;
+    font-size: 20px;
+}
+.fade-in {
+  animation: fadeIn 2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+  .image{
+    display: flex;
+    max-width: 360px;
+    max-height: 360px;
+    object-fit: cover;
+    float: right;
+    margin-top: -10%;
+  }
+  .zoom-in {
+    transition: transform 0.3s ease-in-out; /* Smooth zoom in */
+  }
+  .zoom-in:hover {
+    transform: scale(1.1);
+    transition: transform 0.6s ease-in-out;
+  }
+.navButton {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #ef5aff 0, rgb(141, 0, 138) 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.navButton:focus {
+  box-shadow: #f63853 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #f63853 0 -3px 0 inset;
+}
+
+.navButton:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #f63853 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.navButton:active {
+  box-shadow: #f63853 0 3px 7px inset;
+  transform: translateY(2px);
+}
+.sponsorship-container {
+  width: 80%; /* Adjust as needed */
+  height: 100px; /* Adjust as needed */
+  overflow: hidden;
+  position: relative;
+  background-color: #f1f1f1; /* Optional: background color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:auto
+}
+
+.sponsorship-scroller {
+  display: flex;
+  white-space: nowrap;
+  animation: scrollSponsors 20s linear infinite;
+}
+
+.sponsor {
+  display: inline-block;
+  padding: 0 20px; /* Adjust spacing */
+  font-size: 1.5rem; /* Adjust text size */
+  color: black;
+  cursor: pointer;
+}
+
+@keyframes scrollSponsors {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+.sponsorship-container:hover .sponsorship-scroller {
+  animation-play-state: paused; /* Pause on hover */
+}
+.FAQcontainer{
+    width: 45%;
+    min-width: 500px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 70%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    box-sizing: border-box;
+}
+.FAQwrapper{
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  padding: 15px 40px;
+  border-radius: 5px;
+  box-shadow: 0 15px 25px rgba(0,0,50,0.2);
+}
+.FAQtoggle,
+.FAQcontent{
+    font-family: "Poppins",sans-serif;
+    color:black;
+}
+.FAQtoggle{
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #111130;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px 0;
+}
+.FAQcontent{
+  position: relative;
+  font-size: 14px;
+  text-align: justify;
+  line-height: 30px;
+  height: 0;
+  overflow: hidden;
+  transition: all 1s;
+} 
