@@ -14,6 +14,13 @@
 @import 'components/event.css';
 @import 'components/contact.css';
 
+@font-face {
+    font-family: 'HyperOxide';
+    src: url('../HyperOxide-1j96j.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .section{
     opacity:0;
     visibility:hidden;
@@ -85,4 +92,98 @@
     -webkit-transform:translateZ(-1800px) translateX(-50%) rotateY(45deg);
     transform:translateZ(-1800px) translateX(-50%) rotateY(45deg);
     outline:30px solid #8d008a
+}
+.footer p {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+    margin-left: -5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root {
+    --timing: 265ms;
+    --iconColor: #f100f5;
+    --accent: #64008f;
+    --bluefade: #c200e0;
+    --gradient: #b400f5;
+}
+
+.social-container {
+    position: fixed; 
+    bottom: 0px; 
+    right: 5px; 
+    text-align: center;
+    z-index: 1000;
+}
+
+.social-icons {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icons li {
+    margin: 0.15em;
+    position: relative;
+    font-size: 1.2em;
+}
+
+.social-icons svg {
+    color: #fff;
+    position: absolute;
+    top: 21px;
+    left: 21px;
+    transition: all var(--timing) ease-out;
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+.social-icons a:before {
+    content: " ";
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: block;
+    background: linear-gradient(45deg, var(--iconColor), var(--accent));
+    transition: all var(--timing) ease-out;
+    transform: scale(1); 
+}
+
+.social-icons a:hover:before {
+    transform: scale(0); 
+    transition: all var(--timing) ease-in;
+}
+
+.social-icons a:hover svg {
+    transform: scale(2.2); 
+    color: var(--iconColor);
+    background: -webkit-linear-gradient(45deg, var(--iconColor), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all var(--timing) ease-in;
 }

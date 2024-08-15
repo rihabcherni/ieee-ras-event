@@ -11,153 +11,150 @@
     <div class="event">
       
     </div>
-  </li>
-  <script>
-    const event=document.querySelector(".event");
-    const h1=document.createElement("h1");
-    let currentAnimation=null;
-    function typeText(element, text) {
-      if (currentAnimation) {
-      clearTimeout(currentAnimation); // Cancel any ongoing animation
-    }
-    element.textContent='';
-    let i = 0;
-    function typing() {
-      if (i < text.length) {
-        element.textContent += text.charAt(i);
-        i++;
-        currentAnimation=setTimeout(typing, 100);
+    <script>
+      const event=document.querySelector(".event");
+      const h1=document.createElement("h1");
+      let currentAnimation=null;
+      function typeText(element, text) {
+        if (currentAnimation) {
+        clearTimeout(currentAnimation); // Cancel any ongoing animation
       }
-    }
-    typing();
-  }
-    function Details(){
-      event.innerHTML='';
-      h1.textContent="";
-      event.appendChild(h1);
-      typeText(h1, "Welcome to our event");
-      var div=document.createElement("div");
-      div.className="event-description fade-in"
-      // div.textContent="LA CONFÉRENCE IEEE RAS TUNISIE EST UN RASSEMBLEMENT CLÉ POUR TOUTES LES BRANCHES ÉTUDIANTES EN TUNISIE, VISANT À RENFORCER LES EFFORTS COLLECTIFS DES ÉTUDIANTS À TRAVERS DES INITIATIVES STRUCTURÉES ET COLLABORATIVES POUR CETTE PREMIÈRE ÉDITION. LES ÉDITIONS FUTURES SE CONCENTRERONT SUR DES DÉFIS TECHNIQUES, OFFRANT AUX ÉTUDIANTS ET JEUNES PROFESSIONNELS DES OPPORTUNITÉS D'APPLIQUER LEURS COMPÉTENCES DANS LE DOMAINE DE LA ROBOTIQUE. LE THÈME DE CETTE ÉDITION EST L'INDUSTRIE 6.0, OÙ NOUS ASPIRONS À UN AVENIR OÙ L'IMAGINATION DEVIENT RÉALITÉ. LE PROGRAMME COMPREND DES SESSIONS THÉORIQUES ET PRATIQUES AXÉES SUR LA RÉALITÉ AUGMENTÉE ET VIRTUELLE DANS LES INDUSTRIES. CETTE CONFÉRENCE SE TIENDRA LE 29 SEPTEMBRE 2024 À LA CITÉ DES SCIENCES À TUNIS, EN TUNISIE. ELLE EST ORGANISÉE PAR L'IEEE RAS ENSIT SB ET LE CHAPITRE IEEE RAS TUNISIE. LA CONFÉRENCE RAS TUNISIE (IEEE RTC) SERVIRA DE PLATEFORME COMPLÈTE POUR LES MEMBRES RAS AFIN D'EXPLORER LES AVANCÉES DE POINTE EN MATIÈRE DE RÉALITÉ AUGMENTÉE ET VIRTUELLE, DE TECHNOLOGIE DES JUMEAUX NUMÉRIQUES, D'INTÉGRATION DE L'IA DANS LES PROCESSUS INDUSTRIELS, D'AUTOMATISATION DES USINES INTELLIGENTES ET DU RÔLE DE L'IOT DANS LA CRÉATION D'ENVIRONNEMENTS INDUSTRIELS INTERCONNECTÉS. LES PARTICIPANTS ACQUERRONT DES CONNAISSANCES PRÉCIEUSES ET UNE EXPÉRIENCE PRATIQUE GRÂCE À DES CONFÉRENCES ET DES ATELIERS PRATIQUES.DE PLUS, LA CONFÉRENCE RECONNAÎTRA LES RÉALISATIONS EXCEPTIONNELLES AU SEIN DE NOTRE COMMUNAUTÉ PAR LE BIAIS DE PRESTIGIEUX PRIX. NOUS HONORERONS LES BRANCHES ÉTUDIANTES LES PLUS REMARQUABLES QUI ONT APPORTÉ DES CONTRIBUTIONS SIGNIFICATIVES À LA ROBOTIQUE EN PRÉSENTANT LEURS PROJETS INNOVANTS ET LEURS RECHERCHES IMPACTANTES. LES NOUVELLES BRANCHES ÉTUDIANTES DÉMONTRANT UN PROGRÈS ET UN POTENTIEL REMARQUABLES SERONT ÉGALEMENT RECONNUES. CES PRIX VISENT À CÉLÉBRER L'EXCELLENCE, À INSPIRER UNE DÉVOTION CONTINUE ET À ENCOURAGER LA CROISSANCE ET LE DÉVELOPPEMENT DES TALENTS ÉMERGENTS EN ROBOTIQUE."
-      div.textContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quasi ullam in, non consectetur doloribus cupiditate provident quod quisquam nobis laborum cumque fuga inventore aliquam odio quaerat eaque ipsa magnam."
-      event.appendChild(div);
-      var photo=document.createElement("img");
-      photo.className="image zoom-in";
-      photo.src="./assets/img/event-logo.png";
-      photo.alt="event photo";
-      event.appendChild(photo);
-    }
-    
-    function Speakers(){
-      event.innerHTML='';
-      h1.textContent="";
-      event.appendChild(h1);
-      typeText(h1, "Meet our speakers");
-
-    }
-    function Workshops(){
-      event.innerHTML='';
-      h1.textContent="";
-      event.appendChild(h1);
-      typeText(h1, "Discover our workshops");
-    }
-    function Awards(){
-      event.innerHTML='';
-      h1.textContent="";
-      event.appendChild(h1);
-      typeText(h1, "Awards Ceremony");
-    }
-    function Sponsors(){
-      event.innerHTML='';
-      h1.textContent="";
-      event.appendChild(h1);
-      typeText(h1, "Meet our sponsors");
-      var div=document.createElement("div");
-      div.className="sponsorship_container"
-      div.innerHTML=`
-    <div class="sponsorship-scroller">
-        <div class="sponsor">Sponsor 1</div>
-        <div class="sponsor">Sponsor 2</div>
-        <div class="sponsor">Sponsor 3</div>
-    </div>`
-    event.appendChild(div);
-    
-    }
-    function FAQs(){
-      event.innerHTML='';
-      h1.textContent="";
-      event.appendChild(h1);
-      typeText(h1, "FAQs section");
-      const div=document.createElement("div");
-      div.className="FAQcontainer"
-      div.innerHTML=`
-        <div class="FAQwrapper">
-            <button class="FAQtoggle" onclick="HandleClick(0)">
-               How to become a sponsor ?
-                <i class="fas fa-plus icon" ></i>
-            </button>
-            <div class="FAQcontent">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta sint corrupti quod.</p>
-            </div>
-        </div>
-        <div class="FAQwrapper">
-            <button class="FAQtoggle" onclick="HandleClick(1)">
-                question 2
-                <i class="fas fa-plus icon"></i>
-            </button>
-            <div class="FAQcontent">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores error doloremque, quibusdam qui necessitatibus autem aperiam reprehenderit? Ipsum maiores dolore inventore ea. Accusantium fuga eius laboriosam iusto blanditiis doloremque ullam?</p>
-            </div>
-        </div>
-        <div class="FAQwrapper">
-            <button class="FAQtoggle" onclick="HandleClick(2)">
-                question 3
-                <i class="fas fa-plus icon"></i>
-            </button>
-            <div class="FAQcontent">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur officiis labore commodi sunt ex praesentium dolor magnam asperiores reiciendis. Minus magnam nesciunt aliquid eos ipsam sequi recusandae quos incidunt.</p>
-            </div>
-        </div>
-    `
-    event.appendChild(div);}
-
-
-    function HandleClick(i){
-    let toggles = document.getElementsByClassName('FAQtoggle');
-    let contentDiv = document.getElementsByClassName('FAQcontent');
-    let icons = document.getElementsByClassName('icon');
-
-    // Get the current height of the contentDiv and parse it as an integer
-    let currentHeight = parseInt(contentDiv[i].style.height, 10);
-
-    // Check if the current height is not equal to the scrollHeight (when collapsed)
-    if (currentHeight === 0 || isNaN(currentHeight)) {
-        contentDiv[i].style.height = contentDiv[i].scrollHeight + "px";
-        toggles[i].style.color = "#0084e9";
-        icons[i].classList.remove('fa-plus');
-        icons[i].classList.add('fa-minus');
-    } else {
-        contentDiv[i].style.height = "0px";
-        toggles[i].style.color = "#111130";
-        icons[i].classList.remove('fa-minus');
-        icons[i].classList.add('fa-plus');
-    }
-
-    // Close all other FAQ sections
-    for(let j = 0; j < contentDiv.length; j++){
-        if (j !== i) {
-            contentDiv[j].style.height = "0px";
-            toggles[j].style.color = "#111130";
-            icons[j].classList.remove('fa-minus');
-            icons[j].classList.add('fa-plus');
+      element.textContent='';
+      let i = 0;
+      function typing() {
+        if (i < text.length) {
+          element.textContent += text.charAt(i);
+          i++;
+          currentAnimation=setTimeout(typing, 100);
         }
+      }
+      typing();
     }
-}
-
-
-   
-
-    
-    setTimeout(Details,1000);
-    
-  </script>
+      function Details(){
+        event.innerHTML='';
+        h1.textContent="";
+        event.appendChild(h1);
+        typeText(h1, "Welcome to our event");
+        var div=document.createElement("div");
+        div.className="event-description fade-in"
+        // div.textContent="LA CONFÉRENCE IEEE RAS TUNISIE EST UN RASSEMBLEMENT CLÉ POUR TOUTES LES BRANCHES ÉTUDIANTES EN TUNISIE, VISANT À RENFORCER LES EFFORTS COLLECTIFS DES ÉTUDIANTS À TRAVERS DES INITIATIVES STRUCTURÉES ET COLLABORATIVES POUR CETTE PREMIÈRE ÉDITION. LES ÉDITIONS FUTURES SE CONCENTRERONT SUR DES DÉFIS TECHNIQUES, OFFRANT AUX ÉTUDIANTS ET JEUNES PROFESSIONNELS DES OPPORTUNITÉS D'APPLIQUER LEURS COMPÉTENCES DANS LE DOMAINE DE LA ROBOTIQUE. LE THÈME DE CETTE ÉDITION EST L'INDUSTRIE 6.0, OÙ NOUS ASPIRONS À UN AVENIR OÙ L'IMAGINATION DEVIENT RÉALITÉ. LE PROGRAMME COMPREND DES SESSIONS THÉORIQUES ET PRATIQUES AXÉES SUR LA RÉALITÉ AUGMENTÉE ET VIRTUELLE DANS LES INDUSTRIES. CETTE CONFÉRENCE SE TIENDRA LE 29 SEPTEMBRE 2024 À LA CITÉ DES SCIENCES À TUNIS, EN TUNISIE. ELLE EST ORGANISÉE PAR L'IEEE RAS ENSIT SB ET LE CHAPITRE IEEE RAS TUNISIE. LA CONFÉRENCE RAS TUNISIE (IEEE RTC) SERVIRA DE PLATEFORME COMPLÈTE POUR LES MEMBRES RAS AFIN D'EXPLORER LES AVANCÉES DE POINTE EN MATIÈRE DE RÉALITÉ AUGMENTÉE ET VIRTUELLE, DE TECHNOLOGIE DES JUMEAUX NUMÉRIQUES, D'INTÉGRATION DE L'IA DANS LES PROCESSUS INDUSTRIELS, D'AUTOMATISATION DES USINES INTELLIGENTES ET DU RÔLE DE L'IOT DANS LA CRÉATION D'ENVIRONNEMENTS INDUSTRIELS INTERCONNECTÉS. LES PARTICIPANTS ACQUERRONT DES CONNAISSANCES PRÉCIEUSES ET UNE EXPÉRIENCE PRATIQUE GRÂCE À DES CONFÉRENCES ET DES ATELIERS PRATIQUES.DE PLUS, LA CONFÉRENCE RECONNAÎTRA LES RÉALISATIONS EXCEPTIONNELLES AU SEIN DE NOTRE COMMUNAUTÉ PAR LE BIAIS DE PRESTIGIEUX PRIX. NOUS HONORERONS LES BRANCHES ÉTUDIANTES LES PLUS REMARQUABLES QUI ONT APPORTÉ DES CONTRIBUTIONS SIGNIFICATIVES À LA ROBOTIQUE EN PRÉSENTANT LEURS PROJETS INNOVANTS ET LEURS RECHERCHES IMPACTANTES. LES NOUVELLES BRANCHES ÉTUDIANTES DÉMONTRANT UN PROGRÈS ET UN POTENTIEL REMARQUABLES SERONT ÉGALEMENT RECONNUES. CES PRIX VISENT À CÉLÉBRER L'EXCELLENCE, À INSPIRER UNE DÉVOTION CONTINUE ET À ENCOURAGER LA CROISSANCE ET LE DÉVELOPPEMENT DES TALENTS ÉMERGENTS EN ROBOTIQUE."
+        div.textContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quasi ullam in, non consectetur doloribus cupiditate provident quod quisquam nobis laborum cumque fuga inventore aliquam odio quaerat eaque ipsa magnam."
+        event.appendChild(div);
+        var photo=document.createElement("img");
+        photo.className="image zoom-in";
+        photo.src="./assets/img/event-logo.png";
+        photo.alt="event photo";
+        event.appendChild(photo);
+      }
+      
+      function Speakers(){
+        event.innerHTML='';
+        h1.textContent="";
+        event.appendChild(h1);
+        typeText(h1, "Meet our speakers");
+  
+      }
+      function Workshops(){
+        event.innerHTML='';
+        h1.textContent="";
+        event.appendChild(h1);
+        typeText(h1, "Discover our workshops");
+      }
+      function Awards(){
+        event.innerHTML='';
+        h1.textContent="";
+        event.appendChild(h1);
+        typeText(h1, "Awards Ceremony");
+      }
+      function Sponsors(){
+        event.innerHTML='';
+        h1.textContent="";
+        event.appendChild(h1);
+        typeText(h1, "Meet our sponsors");
+        var div=document.createElement("div");
+        div.className="sponsorship_container"
+        div.innerHTML=`
+      <div class="sponsorship-scroller">
+          <div class="sponsor">Sponsor 1</div>
+          <div class="sponsor">Sponsor 2</div>
+          <div class="sponsor">Sponsor 3</div>
+      </div>`
+      event.appendChild(div);
+      
+      }
+      function FAQs(){
+        event.innerHTML='';
+        h1.textContent="";
+        event.appendChild(h1);
+        typeText(h1, "FAQs section");
+        const div=document.createElement("div");
+        div.className="FAQcontainer"
+        div.innerHTML=`
+          <div class="FAQwrapper">
+              <button class="FAQtoggle" onclick="HandleClick(0)">
+                 How to become a sponsor ?
+                  <i class="fas fa-plus icon" ></i>
+              </button>
+              <div class="FAQcontent">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta sint corrupti quod.</p>
+              </div>
+          </div>
+          <div class="FAQwrapper">
+              <button class="FAQtoggle" onclick="HandleClick(1)">
+                  question 2
+                  <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="FAQcontent">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores error doloremque, quibusdam qui necessitatibus autem aperiam reprehenderit? Ipsum maiores dolore inventore ea. Accusantium fuga eius laboriosam iusto blanditiis doloremque ullam?</p>
+              </div>
+          </div>
+          <div class="FAQwrapper">
+              <button class="FAQtoggle" onclick="HandleClick(2)">
+                  question 3
+                  <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="FAQcontent">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur officiis labore commodi sunt ex praesentium dolor magnam asperiores reiciendis. Minus magnam nesciunt aliquid eos ipsam sequi recusandae quos incidunt.</p>
+              </div>
+          </div>
+      `
+      event.appendChild(div);}
+  
+  
+      function HandleClick(i){
+      let toggles = document.getElementsByClassName('FAQtoggle');
+      let contentDiv = document.getElementsByClassName('FAQcontent');
+      let icons = document.getElementsByClassName('icon');
+  
+      // Get the current height of the contentDiv and parse it as an integer
+      let currentHeight = parseInt(contentDiv[i].style.height, 10);
+  
+      // Check if the current height is not equal to the scrollHeight (when collapsed)
+      if (currentHeight === 0 || isNaN(currentHeight)) {
+          contentDiv[i].style.height = contentDiv[i].scrollHeight + "px";
+          toggles[i].style.color = "#0084e9";
+          icons[i].classList.remove('fa-plus');
+          icons[i].classList.add('fa-minus');
+      } else {
+          contentDiv[i].style.height = "0px";
+          toggles[i].style.color = "#111130";
+          icons[i].classList.remove('fa-minus');
+          icons[i].classList.add('fa-plus');
+      }
+  
+      // Close all other FAQ sections
+      for(let j = 0; j < contentDiv.length; j++){
+          if (j !== i) {
+              contentDiv[j].style.height = "0px";
+              toggles[j].style.color = "#111130";
+              icons[j].classList.remove('fa-minus');
+              icons[j].classList.add('fa-plus');
+          }
+      }
+  }
+  
+      
+      setTimeout(Details,1000);
+      
+    </script>
+  </li>

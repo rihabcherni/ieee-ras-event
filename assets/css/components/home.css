@@ -47,10 +47,11 @@
 }
 .home--banner h1{
     position:relative;
-    font-size:68px;
+    font-size:58px;
     font-weight:900;
     line-height:1;
-    z-index:1
+    z-index:1;
+    font-family: 'HyperOxide';
 }
 .home--banner button{
     position:relative;

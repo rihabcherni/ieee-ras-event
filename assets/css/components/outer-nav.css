@@ -31,11 +31,12 @@
     display:block
 }
 .outer-nav>li{
+    font-family: 'HyperOxide';
     -webkit-transform-style:preserve-3d;
     transform-style:preserve-3d;
     -webkit-transform:translateX(350px) translateZ(-1000px);
     transform:translateX(350px) translateZ(-1000px);
-    font-size:55px;
+    font-size:45px;
     font-weight:900;
     opacity:0;
     cursor:pointer;
@@ -56,12 +57,12 @@
 .outer-nav>li::before{
     content:"";
     position:absolute;
-    top:50%;
+    top:40%;
     left:50%;
     -webkit-transform:translate(-50%, -25%);
     transform:translate(-50%, -25%);
-    width:110%;
-    height:15px;
+    width:105%;
+    height:10px;
     opacity:0;
     background-color:#8d008a
 }

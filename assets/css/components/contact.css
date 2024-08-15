@@ -1,31 +1,19 @@
 .contact{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
+    position:relative;
     height:100%;
-    background-image:url("../../img/contact-visual.png");
-    background-position:center;
-    background-size:cover;
-    background-repeat:no-repeat
+    justify-content:center;
+    margin:0 auto
+}
+.contact h2 {
+    text-align: center;
+    font-family: 'HyperOxide';
+    font-size: 40px;
+    margin-bottom: -5px;
 }
 .contact--lockup{
     position:relative;
-    display:-webkit-box;
-    display:-webkit-flex;
-    display:-ms-flexbox;
-    display:flex;
-    width:900px;
-    max-width:75%;
-    height:100%;
-    -webkit-box-align:center;
-    -webkit-align-items:center;
-    -ms-flex-align:center;
-    align-items:center;
-    -webkit-box-pack:end;
-    -webkit-justify-content:flex-end;
-    -ms-flex-pack:end;
-    justify-content:flex-end;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
     margin:0 auto
 }
 @media (max-width: 1180px){
@@ -42,6 +30,10 @@
     }
 }
 .contact--lockup .modal{
+    padding:45px 45px;
+    text-align:center;
+}
+.contact--lockup .modal2{
     padding:45px 45px;
     text-align:center;
     background-color:#0c0c0c;
