@@ -28,6 +28,12 @@
           <?php include 'components/registration.html'; ?>
           <?php include 'components/team.html'; ?>
           <?php include 'components/contact.html'; ?>
+          ody>
+    <section class="wrapper">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </section>
           <div class="social-container">
             <ul class="social-icons">
               <li>
