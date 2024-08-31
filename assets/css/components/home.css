@@ -18,6 +18,17 @@
     justify-content:center;
     margin:0 auto
 }
+.date-place{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-between;
+    width: 40%;
+    margin-bottom: 30px;
+    align-items: center;
+}
+.date-place i{
+    color: #8d008a;
+}
 @media (max-width: 1180px){
     .home{
         max-width:100%
@@ -25,7 +36,7 @@
 }
 .home--banner{
     position:relative;
-    height:475px
+    height:405px
 }
 .home--banner::before{
     content:"";
@@ -39,15 +50,25 @@
 .home--banner::after{
     content:"";
     position:absolute;
-    bottom:18px;
+    bottom:14px;
     left:0;
-    width:30px;
-    height:4px;
-    background-color:#8d008a
+    width:50px;
+    height:15px;
+    background-color:#8d008a;
+    animation: moveRight 8s forwards;
+    border-radius: 10px;
+}
+@keyframes moveRight {
+    from {
+        left: 0;
+    }
+    to {
+        left: 96%; 
+    }
 }
 .home--banner h1{
     position:relative;
-    font-size:58px;
+    font-size:43px;
     font-weight:900;
     line-height:1;
     z-index:1;
@@ -124,7 +145,7 @@
         height:380px
     }
     .home--banner h1{
-        font-size:55px
+        font-size:35px
     }
     .home--banner img{
         width:430px
@@ -141,7 +162,7 @@
         height:305px
     }
     .home--banner h1{
-        font-size:44px
+        font-size:25px
     }
     .home--banner img{
         width:330px
@@ -163,7 +184,7 @@
         height:360px
     }
     .home--banner h1{
-        font-size:55px
+        font-size:20px
     }
     .home--banner img{
         display:none

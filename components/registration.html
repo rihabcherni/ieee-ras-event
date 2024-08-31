@@ -4,39 +4,39 @@
     <div class="container-registration">
       <form id="form" method="POST" class="registration-request">
         <div class="">
-          <div class="row">
-            <div>
-              <label for="firstName">First Name:</label><br>
-              <input type="text" id="firstName" name="FirstName" required>
+          <div class="row-contact">
+            <div class="styled-input">
+              <input type="text" required  type="text" name="FirstName"/>
+              <label>First Name</label> 
             </div>
-            <div>
-              <label for="lastName">Last Name:</label><br>
-              <input type="text" id="lastName" name="LastName" required>
+            <div class="styled-input">
+              <input type="text" required  type="text" name="LastName"/>
+              <label>Last Name</label> 
             </div>
-          </div>
-          <div class="input">
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="Email" required>
           </div>
 
-          <div class="input">
-            <label for="university">University:</label><br>
+          <div class="styled-input">
+            <input type="text" required type="email" id="email" name="Email"/>
+            <label>Email</label> 
+          </div>
+
+          <div class="styled-input">
             <input type="text" id="university" name="University" required>
+            <label>University</label>
           </div>
-
-          <div class="input">
-            <label for="ieeeMember">Are you an IEEE Member?</label><br>
+          <label class="select-label" for="ieeeMember">Are you an IEEE Member?</label><br>
+          <div class="styled-input">
             <select id="ieeeMember" name="IEEE Member" required>
               <option value="Yes">Yes</option>
               <option value="No">No</option>
             </select>
           </div>
 
-          <div class="input">
-            <label for="expectations">What do you expect from the event?</label><br>
+          <div class="styled-input">
             <textarea id="expectations" name="Expectations" rows="4" required></textarea>
+            <label for="expectations">What do you expect from the event?</label>
           </div>
-          <button type="submit" id="submit-button">Register</button>
+          <button type="submit" id="submit-button" class="submit-btn">Register</button>
         </div>
       </form>
       <div

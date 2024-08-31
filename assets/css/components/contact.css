@@ -4,6 +4,12 @@
     justify-content:center;
     margin:0 auto
 }
+.contact-msg{
+    text-align: center;
+    max-width:70% ;
+    margin: 0 auto;
+
+}
 .contact h2 {
     text-align: center;
     font-family: 'HyperOxide';
@@ -14,7 +20,7 @@
     position:relative;
     display:grid;
     grid-template-columns: repeat(2,1fr);
-    margin:0 auto
+    margin:20px auto 0;
 }
 @media (max-width: 1180px){
     .contact--lockup{
@@ -30,31 +36,118 @@
     }
 }
 .contact--lockup .modal{
-    padding:45px 45px;
+    padding:15px;
     text-align:center;
+    margin: 0 20%;
 }
 .contact--lockup .modal2{
-    padding:45px 45px;
-    text-align:center;
-    background-color:#0c0c0c;
-    box-shadow:0 0 30px 0 rgba(0,0,0,0.75);
+    padding:15px;
+    margin-top: 5%;
 }
 .contact--lockup .modal--information p,.contact--lockup .modal--information a{
-    display:block;
     margin:14px 0;
     text-decoration:none;
     color:#fff;
     font-weight:700
 }
-.contact--lockup .modal--information p{
-    margin-top:0
+
+.submit-btn {
+    padding: 10px;
+    background-color: #8d008a;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    margin: -7px 10px;    cursor: pointer;
+    width: 100%;
+    width: calc(100% + 20px);
 }
-.submit-btn{
-    width:130px;
-    height: 40px;
-    margin:0 auto 25px auto;
-    margin-bottom:0;
-    background-color:#8d008a;
-    text-transform:uppercase;
-    border-radius: 5px;
+.submit-btn:hover {
+    background-color: #4c044b;
+    transform: translateX(1px);
 }
+
+.row-contact{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 7%;
+    margin-bottom: -15px;
+}
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label, select:focus ~ label  {
+    font-size: 0.7rem;
+    color: #999;
+    top: -17px;
+    -webkit-transition: all 0.225s ease;
+    transition: all 0.225s ease;
+}
+
+.styled-input {
+    margin: 1rem 0;
+    position: relative;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px){
+    .styled-input {
+        width:100%;
+    }
+}
+
+.styled-input label {
+    color: #999;
+    padding: 1.3rem 30px 1rem 30px;
+    position: absolute;
+    top: -2px;
+    left: 0;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    pointer-events: none;
+    font-size: 16px;
+}
+.select-label {
+    color: #999;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    font-size: 16px;
+    margin: 0 10px !important;
+}
+input, textarea, select {
+    padding: 20px 0 20px 20px;
+    border: 0;
+    width: 100%;
+    font-size: 0.8rem;
+    background-color: #2d2d2d;
+    color: white;
+    border-radius: 4px;
+    margin: 0 10px;
+}
+input:focus,select:focus,
+textarea:focus{ outline: 0; }
+
+input:focus ~ span, textarea:focus ~ span, select:focus ~ span {
+    width: 100%;
+    -webkit-transition: all 0.075s ease;
+    transition: all 0.075s ease;
+}
+.contact .fa{
+    color: #8d008a;
+    font-size: 30px;
+    margin: 0 ;
+    background-color: rgba(255, 255, 255, 0.712);
+    padding: 10px 10px 8px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+.contact-info {
+    display: flex;
+    margin-bottom: 25px;
+    align-items: center;
+    gap: 10%;
+    text-align: left;
+}
+.contact-info i{
+    text-align: center;
+}
+

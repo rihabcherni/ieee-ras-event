@@ -1,0 +1,125 @@
+.program{
+    position:relative;
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    width:900px;
+    max-width:75%;
+    height:100%;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    -webkit-flex-direction:column;
+    -ms-flex-direction:column;
+    flex-direction:column;
+    -webkit-box-pack:center;
+    -webkit-justify-content:center;
+    -ms-flex-pack:center;
+    justify-content:center;
+    margin:0 auto
+}
+.timeline {
+    width: 100%;
+    max-width: 1050px;
+    position: relative;
+    padding: 20px 0;
+    margin: 20px auto !important;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 8px;
+    height: 100%;
+    background: #333;
+    transform: translateX(-50%);
+}
+.timeline2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 12px;
+    height: 30px;
+    background: #ffffff;
+    transform: translateX(-50%);
+    animation: moveTopDown 8s linear infinite;
+}
+
+@keyframes moveTopDown {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: 95%;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+
+.timeline-event {
+    position: relative;
+    width: 50%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.timeline-event:nth-child(even) {
+    left: 50%;
+}
+
+.timeline-event:nth-child(odd) {
+    left: 0;
+}
+
+.timeline-event:nth-child(odd) .event-circle {
+    left: calc(100% + 20px);
+}
+
+.timeline-event:nth-child(even) .event-circle {
+    right: calc(100% + 20px);
+}
+
+
+.timeline-event .event-time {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.timeline-event .event-circle {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: bold;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.timeline-event .event-program {
+    background: #b303c054;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+}
+
+.timeline-event:nth-child(odd) .event-circle {
+    background-color: #3498db;
+}
+
+.timeline-event:nth-child(even) .event-circle {
+    background-color: #e74c3c;
+}
+

@@ -18,50 +18,16 @@
     margin:0 auto
 }
 .registration .container-registration {
-    width: 100%;
+    width: 70%;
     margin: 0 auto;
-    padding: 15px;
-    box-shadow: 0 0 20px rgba(154, 0, 123, 0.8);
 }
 .registration h2 {
     text-align: center;
     font-family: 'HyperOxide';
     font-size: 40px;
-    margin-bottom: -5px;
+    margin: -15px 0 0;
 }
-.registration form {
-    display: flex;
-    flex-direction: column;
-}
-.registration label {
-    margin-bottom: 5px;
-}
-.registration input, textarea, select {
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 2px solid #ccc;
-    width: 100%;
-    color: #000000;
-    font-weight: 700;
-}
-.registration button {
-    padding: 10px;
-    background-color: #8d008a;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-}
-.registration button:hover {
-    background-color: #4c044b;
-}
-.registration .row{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 3%;
-}
-.registration .row input{
-    width: 94%;
+
+.registration select{
+    width: calc(100% + 20px) !important;
 }

@@ -1,207 +1,338 @@
-@media (max-width: 1180px){
-    .event{
-        max-width:100%
-    }
+section {
+	position: relative;
+	margin: 0 80px;
+	transition: .5s ease;
 }
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
-.event div,.event img{
-  display: flex;
-  justify-content: space-between; /* Ensure space between text and image */
-  align-items: center; /* Align text and image vertically in the middle */
-  
+
+.main-container {
+	position: relative;
 }
-.event h1{
-    font-size: 2em;
+
+.tab-nav-bar {
+	position: relative;
+	margin: 65px 10px 0px 10px;
+}
+
+.tab-navigation {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: fit-content;
+	margin: 0 auto;
+}
+
+.tab-menu {
+	color: var(--text-color);
+	list-style: none;
+	background-color: var(--third-color);
+	max-width: 800px;
+	padding: 10px;
+	white-space: nowrap;
+	border-bottom: 1px solid var(--third-color);
+	border-radius: 50px;
+	box-shadow: var(--box-shadow);
+	scroll-behavior: smooth;
+
+	user-select: none;
+	overflow-x: auto;
+}
+
+.tab-menu.dragging {
+	scroll-behavior: unset;
+	cursor: grab;
+}
+
+.tab-menu::-webkit-scrollbar {
+	display: none;
+}
+
+.tab-btn {
+	display: inline-block;
+	color: var(--text-color);
+	font-size: 1em;
+	font-weight: 400;
+	margin: 0 2px;
+	padding: 10px 20px;
+	border-radius: 30px;
+	cursor: pointer;
+	user-select: none;
+	transition: background-color .3s ease;
+}
+
+.tab-menu.dragging .tab-btn {
+	pointer-events: none;
+}
+
+.tab-btn:hover {
+	background-color: var(--first-color);
+}
+
+.tab-btn.active {
+	background-color: var(--second-color);
+}
+
+.left-btn,
+.right-btn {
+	position: absolute;
+	color: var(--text-color);
+	font-size: 1.8em;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.left-btn {
+	left: 0;
+	background: linear-gradient(to left, transparent, var(--first-color) 80%);
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+	display: none;
+}
+
+.right-btn {
+	right: 0;
+	background: linear-gradient(to right, transparent, var(--first-color) 80%);
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+
+
+
+
+/* ===== Tab content ===== */
+.tab-content {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.tab {
+	position: absolute;
+	top: 0;
+	right: auto;
+	bottom: 0;
+	left: auto;
+	max-width: 1100px;
+	padding: 15px 50px;
+	opacity: 0;
+
+	transform: translateX(25px);
+	content-visibility: hidden;
+}
+
+.tab.active {
+	transform: translateX(0);
+	content-visibility: visible;
+	opacity: 1;
+	transition: opacity 1s ease, transform 1s ease;
+}
+
+.tab .row {
+	width: 115%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	gap: 15px;
+}
+
+.tab .img-card {
+	position: relative;
+	width: 550px;
+	max-width: 550px;
+	height: 300px;
+	max-height: 300px;
+	border-radius: 40px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: var(--box-shadow);
+}
+
+.tab .img-card img {
+	width: 100%;
+	object-fit: cover;
+}
+.tab .img-card video {
+	width: 100%;
+	object-fit: contain;
+}
+
+.right-column {
+	max-width: 1000px;
+}
+
+.info .event-title,
+.info .description p {
+	color: var(--text-color);
+}
+
+.info .event-title {
+	font-size: 2em;
+}
+
+
+
+/* ===== Media queries (max-width: 1050px;) ===== */
+@media screen and (max-width: 1050px) {
+	section {
+		margin: 0 0;
+	}
+
+	.tab-nav-bar {
+		margin: 65px 20px 40px 25px;
+	}
+
+	.tab {
+		padding: 15px 25px;
+	}
+
+	.tab .row {
+		flex-direction: column;
+	}
+
+	.tab .img-card {
+		width: auto;
+		max-width: 600px;
+	}
+
+}
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+
+.faq-container {
+    margin: 0;
     display: flex;
-    margin:5% auto;
-    justify-content: center;
-    text-decoration:underline;
-    
-    }
-.event-nav{
-    color: black;
-    margin-top: 10%;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faq-container h1 {
+    color: #333;
+}
+
+.faq-container .faq-tab {
+    position: relative;
+    background: #fff;
+    padding: 0 20px 20px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.faq-container .faq-tab input {
+    appearance: none;
+}
+
+.faq-container .faq-tab label {
+    display: inline-block;
+    display: flex;
+    margin-bottom: 0px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-container .faq-tab label::after {
+    content: "+";
+    position: absolute;
+    right: 20px;
+    font-size: 2em;
+    color: rgba(0, 0, 0, 0.1);
+    transition: transform 1s;
+}
+
+.faq-container .faq-tab:hover label::after {
+    color: #333;
+}
+
+.faq-container .faq-tab input:checked~label::after {
+    content: "+";
+    color: #fff;
+    transform: rotate(135deg);
+}
+
+.faq-container .faq-tab label h2 {
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    width: 100%;
-    font-size: 120%;
-}
-.event-description{
-    max-width: 40%;
-    margin-top: 5%;
-    margin-left: 10%;
-    text-align: left;
-    font-size: 20px;
-}
-.fade-in {
-  animation: fadeIn 2s ease-in forwards;
+    color: #fff;
+    font-size: 1.25em;
+    border-radius: 5px;
+    margin-right: 10px;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-  .image{
-    display: flex;
-    max-width: 360px;
-    max-height: 360px;
-    object-fit: cover;
-    float: right;
-    margin-top: -15%;
-  }
-  .zoom-in {
-    transition: transform 0.3s ease-in-out; /* Smooth zoom in */
-  }
-  .zoom-in:hover {
-    transform: scale(1.1);
-    transition: transform 0.6s ease-in-out;
-  }
-.navButton {
-  align-items: center;
-  appearance: none;
-  background-image: radial-gradient(100% 100% at 100% 0, #ef5aff 0, rgb(141, 0, 138) 100%);
-  border: 0;
-  border-radius: 6px;
-  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-flex;
-  font-family: "JetBrains Mono",monospace;
-  height: 48px;
-  justify-content: center;
-  line-height: 1;
-  list-style: none;
-  overflow: hidden;
-  padding-left: 16px;
-  padding-right: 16px;
-  position: relative;
-  text-align: left;
-  text-decoration: none;
-  transition: box-shadow .15s,transform .15s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  will-change: box-shadow,transform;
-  font-size: 18px;
-}
-
-.navButton:focus {
-  box-shadow: #f63853 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #f63853 0 -3px 0 inset;
-}
-
-.navButton:hover {
-  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #f63853 0 -3px 0 inset;
-  transform: translateY(-2px);
-}
-
-.navButton:active {
-  box-shadow: #f63853 0 3px 7px inset;
-  transform: translateY(2px);
-}
-.sponsorship_container {
-  width: 80%; /* Adjust as needed */
-  height: 100px; /* Adjust as needed */
-  overflow: hidden;
-  position: relative;
-  background-color: #f1f1f1; /* Optional: background color */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin:auto
-}
-
-.sponsorship-scroller {
-  display: flex;
-  white-space: nowrap;
-  animation: scrollSponsors 20s linear infinite;
-}
-
-.sponsor {
-  display: inline-block;
-  padding: 0 20px; /* Adjust spacing */
-  font-size: 1.5rem; /* Adjust text size */
-  color: black;
-  cursor: pointer;
-}
-
-@-webkit-keyframes scrollSponsors {
-  0% {
-      -webkit-transform: translateX(100%);
-      transform: translateX(100%);
-  }
-  100% {
-      -webkit-transform: translateX(-100%);
-      transform: translateX(-100%);
-  }
-}
-
-@keyframes scrollSponsors {
-  0% {
-      -webkit-transform: translateX(100%);
-      transform: translateX(100%);
-  }
-  100% {
-      -webkit-transform: translateX(-100%);
-      transform: translateX(-100%);
-  }
-}
-
-.sponsorship_container:hover .sponsorship-scroller {
-  animation-play-state: paused; /* Pause on hover */
-}
-
-.FAQcontainer{
-    width: 45%;
-    min-width: 500px;
+.faq-container .faq-tab input:checked~label h2 {
     position: absolute;
-    transform: translate(-50%,-50%);
-    top: 70%;
-    left: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 10%;
-    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 8em;
+    justify-content: flex-end;
+    padding: 20px;
 }
-.FAQwrapper{
-  background-color: #ffffff;
-  margin-bottom: 20px;
-  padding: 15px 40px;
-  border-radius: 5px;
-  box-shadow: 0 15px 25px rgba(0,0,50,0.2);
+
+.faq-container .faq-tab label h3 {
+    position: relative;
+    font-weight: 500;
+    color: #333;
+    z-index: 10;
 }
-.FAQtoggle,
-.FAQcontent{
-    font-family: "Poppins",sans-serif;
-    color:black;
+
+.faq-container .faq-tab input:checked~label h3 {
+    background: #fff;
+    padding: 2px 10px;
+    color: #333;
+    border-radius: 2px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
-.FAQtoggle{
-  width: 100%;
-  background-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 16px;
-  color: #111130;
-  font-weight: 500;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 15px 0;
+
+.faq-container .faq-tab .content {
+    max-height: 0;
+    overflow: hidden;
+    transition: 1s;
 }
-.FAQcontent{
-  position: relative;
-  font-size: 14px;
-  text-align: justify;
-  line-height: 30px;
-  height: 0;
-  overflow: hidden;
-  transition: all 1s;
-} 
+
+.faq-container .faq-tab input:checked~.content {
+    max-height: 100vh;
+    transition: 1s;
+}
+
+.faq-container .faq-tab .content p {
+    position: relative;
+    padding: 10px 0;
+    color: #333;
+    z-index: 10;
+}
+
+.faq-container .faq-tab input:checked~.content p {
+    color: #fff;
+}
+
+.faq-container .faq-tab:nth-child(1) label h2 {
+    background: linear-gradient(135deg, #70f570 10%, #49c628 100%);
+}
+
+.faq-container .faq-tab:nth-child(2) label h2 {
+    background: linear-gradient(135deg, #3c8ce7 10%, #00eaff 100%);
+}
+
+.faq-container .faq-tab:nth-child(3) label h2 {
+    background: linear-gradient(135deg, #ff96f9 10%, #c32bac 100%);
+}
+
+.faq-container .faq-tab:nth-child(4) label h2 {
+    background: linear-gradient(135deg, #fd6e6a 10%, #ffc600 100%);
+}

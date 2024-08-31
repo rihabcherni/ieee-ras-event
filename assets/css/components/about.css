@@ -16,16 +16,24 @@
     -webkit-justify-content:center;
     -ms-flex-pack:center;
     justify-content:center;
-    margin:0 auto
+    margin:0 auto;
+    background-image:url("../../img/background.webp")
 }
 @media (max-width: 1180px){
     .about{
         max-width:100%
     }
 }
+.about--banner .title{
+    margin-bottom: -50px;
+    color: #ff96fd;
+    font-weight: bold;
+}
 .about--banner{
     position:relative;
-    height:475px
+    height:475px;
+    display: flex;
+    justify-content: space-between;
 }
 .about--banner::before{
     content:"";
@@ -51,7 +59,6 @@
 }
 .about--banner h2{
     position:relative;
-    margin-top:35px;
     font-size:68px;
     font-weight:900;
     line-height:1;
@@ -202,4 +209,48 @@
     .about--options{
         display:none
     }
+}
+
+
+
+
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.about-card {
+    background-color: #b8860b;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+.card.right {
+    background-color: #000;
+}
+
+.card.left {
+    background-color: #b8860b;
+}
+
+.about-card h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.about-card p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.icon {
+    font-size: 36px;
+    margin-bottom: 15px;
 }
