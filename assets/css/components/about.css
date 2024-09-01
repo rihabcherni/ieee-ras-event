@@ -4,8 +4,7 @@
     display:-webkit-flex;
     display:-ms-flexbox;
     display:flex;
-    width:900px;
-    max-width:75%;
+    max-width:78%;
     height:100%;
     -webkit-box-orient:vertical;
     -webkit-box-direction:normal;
@@ -17,12 +16,14 @@
     -ms-flex-pack:center;
     justify-content:center;
     margin:0 auto;
-    background-image:url("../../img/background.webp")
 }
 @media (max-width: 1180px){
     .about{
         max-width:100%
     }
+}
+.about button{
+    margin-top: 20px;
 }
 .about--banner .title{
     margin-bottom: -50px;
@@ -34,6 +35,7 @@
     height:475px;
     display: flex;
     justify-content: space-between;
+    gap: 5%;
 }
 .about--banner::before{
     content:"";
@@ -56,6 +58,9 @@
     width:10px;
     height:10px;
     background-color:#8d008a
+}
+.about--banner .title2{
+    font-family: 'HyperOxide';
 }
 .about--banner h2{
     position:relative;
@@ -106,52 +111,6 @@
     position:absolute;
     bottom:-90px;
     right:-12px
-}
-.about--options{
-    display:-webkit-box;
-    display:-webkit-flex;
-    display:-ms-flexbox;
-    display:flex;
-    max-width:600px;
-    -webkit-box-pack:justify;
-    -webkit-justify-content:space-between;
-    -ms-flex-pack:justify;
-    justify-content:space-between;
-    margin:0;
-    padding:0;
-    list-style:none
-}
-.about--options>a{
-    position:relative;
-    width:150px;
-    height:75px;
-    text-decoration:none;
-    color:#fff;
-    border:10px solid #8d008a;
-    background-position:center;
-    background-size:cover;
-    background-repeat:no-repeat
-}
-.about--options>a:nth-child(1){
-    background-image:url("../../img/about-winners.jpg")
-}
-.about--options>a:nth-child(2){
-    background-image:url("../../img/about-philosophy.jpg")
-}
-.about--options>a:nth-child(3){
-    background-image:url("../../img/about-history.jpg")
-}
-.about--options>a:hover h3{
-    bottom:-50px
-}
-.about--options h3{
-    position:absolute;
-    bottom:-38px;
-    left:10px;
-    font-size:16px;
-    text-transform:uppercase;
-    -webkit-transition:bottom .2s ease-in-out,left .2s ease-in-out;
-    transition:bottom .2s ease-in-out,left .2s ease-in-out
 }
 @media (max-width: 767px){
     .about--banner{
@@ -206,14 +165,7 @@
     .about--banner img{
         display:none
     }
-    .about--options{
-        display:none
-    }
 }
-
-
-
-
 
 .cards-container {
     display: grid;
@@ -222,35 +174,39 @@
 }
 
 .about-card {
-    background-color: #b8860b;
+    background-color: #d404db4c;
     color: white;
-    padding: 20px;
+    padding: 10px 20px ;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transform: translateX(-100%);
     opacity: 0;
-    transition: transform 0.8s ease, opacity 0.8s ease;
+    transition: transform 2s ease, opacity 1.5s ease;
+    height: 220px !important;
 }
 
-.card.right {
-    background-color: #000;
+.about-card.c1 , .about-card.c4 {
+    background-color: #dfdede39 !important;
 }
 
-.card.left {
-    background-color: #b8860b;
+.about-card.c3 , .about-card.c3 {
+    background-color: #d404db4c;
 }
-
+.c1 , .c3{
+    margin: -40px 0 40px;
+}
 .about-card h2 {
     margin: 0;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .about-card p {
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .icon {
     font-size: 36px;
     margin-bottom: 15px;
+    text-align: center;
 }

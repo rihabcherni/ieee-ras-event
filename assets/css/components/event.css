@@ -336,3 +336,54 @@ section {
 .faq-container .faq-tab:nth-child(4) label h2 {
     background: linear-gradient(135deg, #fd6e6a 10%, #ffc600 100%);
 }
+
+.event--options{
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    max-width:100%;
+    -webkit-box-pack:justify;
+    -webkit-justify-content:space-between;
+    -ms-flex-pack:justify;
+    justify-content:space-between;
+    margin:20px 0;
+    padding:0;
+    list-style:none
+}
+.event--options>a{
+    position:relative;
+    width:160px;
+    height:85px;
+    text-decoration:none;
+    color:#fff;
+    border:10px solid #ca03c7c0;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat
+}
+.event--options>a:nth-child(1){
+    background-image:url("../../img/about-us/about1.webp")
+}
+.event--options>a:nth-child(2){
+    background-image:url("../../img/about-us/about2.png")
+}
+.event--options>a:nth-child(3){
+    background-image:url("../../img/about-us/about3.jpeg")
+}
+.event--options>a:nth-child(4){
+    background-image:url("../../img/about-us/about4.PNG")
+}
+.event--options>a:nth-child(5){
+    background-image:url("../../img/about-us/about5.jpg")
+}
+.event--options>a:hover{
+    border:12px solid #650463f1;
+    transition: all 1s ease;
+	transform: scale(1.02);
+}
+@media (max-width: 600px){
+	.event--options{
+		display:none
+	}
+}

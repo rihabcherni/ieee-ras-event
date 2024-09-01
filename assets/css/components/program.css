@@ -1,11 +1,10 @@
-.program{
+.planning{
     position:relative;
     display:-webkit-box;
     display:-webkit-flex;
     display:-ms-flexbox;
     display:flex;
-    width:900px;
-    max-width:75%;
+    max-width:100%;
     height:100%;
     -webkit-box-orient:vertical;
     -webkit-box-direction:normal;
@@ -18,12 +17,18 @@
     justify-content:center;
     margin:0 auto
 }
+.planning h2{
+    text-align: center;
+    font-size: 1.8rem;
+    color: #fff;
+    font-family: 'HyperOxide';
+}
 .timeline {
     width: 100%;
     max-width: 1050px;
     position: relative;
-    padding: 20px 0;
-    margin: 20px auto !important;
+    padding: 0;
+    margin: 0 auto !important;
 }
 
 .timeline::before {
@@ -64,7 +69,7 @@
 .timeline-event {
     position: relative;
     width: 50%;
-    padding: 10px 20px;
+    padding: 6px 20px;
     box-sizing: border-box;
 }
 
@@ -106,7 +111,7 @@
     z-index: 1;
 }
 
-.timeline-event .event-program {
+.timeline-event .event-planning {
     background: #b303c054;
     padding: 10px;
     border-radius: 5px;

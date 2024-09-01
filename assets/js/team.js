@@ -74,8 +74,8 @@ function generateTeamCards(teamMembers) {
          <div class="member-card">
               <img src="${member.img}" alt="${member.name}">
               <div class="icons">
-                  <a href="${member.linkedin}" target="_blank"><i style="font-size:24px" class="fa">&#xf08c;</i></a>
-                  <a href="${member.facebook}" target="_blank"><i style="font-size:24px" class="fa">&#xf09a;</i></a>
+                  <a href="${member.facebook}" target="_blank"><i class="fa">&#xf09a;</i></a>
+                  <a href="${member.linkedin}" target="_blank"><i class="fa">&#xf08c;</i></a>    
               </div>
               <div class="content">
                 <div class="contentBox">
