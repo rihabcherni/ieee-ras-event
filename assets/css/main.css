@@ -13,6 +13,7 @@
 @import 'components/event.css';
 @import 'components/program.css';
 @import 'components/contact.css';
+@import 'components/sponsor.css';
 
 :root {
     --timing: 265ms;

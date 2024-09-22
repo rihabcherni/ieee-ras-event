@@ -168,15 +168,24 @@ section {
 .info .event-title,
 .info .description p {
 	color: var(--text-color);
+	text-align: center;
+	
 }
 
-.info .event-title {
-	font-size: 2em;
+.info .event-title, .info .event-title1 {
+	font-size: 1.8em !important;
+	position: relative;
+    color: #fff;
+    font-family: 'HyperOxide';
+    text-align: center;
+}
+
+.info .event-title1,
+.info .description1 p  {
+    text-align: left !important;
 }
 
 
-
-/* ===== Media queries (max-width: 1050px;) ===== */
 @media screen and (max-width: 1050px) {
 	section {
 		margin: 0 0;
@@ -213,7 +222,7 @@ section {
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 
 .faq-container h1 {
@@ -223,7 +232,7 @@ section {
 .faq-container .faq-tab {
     position: relative;
     background: #fff;
-    padding: 0 20px 20px;
+    padding: 0 20px;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
     border-radius: 5px;
     overflow: hidden;
@@ -236,16 +245,18 @@ section {
 .faq-container .faq-tab label {
     display: inline-block;
     display: flex;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
     align-items: center;
     cursor: pointer;
+	height: 40px;
 }
 
 .faq-container .faq-tab label::after {
     content: "+";
     position: absolute;
     right: 20px;
-    font-size: 2em;
+	top: 10px;
+    font-size: 3em;
     color: rgba(0, 0, 0, 0.1);
     transition: transform 1s;
 }
@@ -277,11 +288,11 @@ section {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 50%;
     color: rgba(255, 255, 255, 0.2);
     font-size: 8em;
     justify-content: flex-end;
-    padding: 20px;
+    padding: 5px;
 }
 
 .faq-container .faq-tab label h3 {
@@ -312,7 +323,7 @@ section {
 
 .faq-container .faq-tab .content p {
     position: relative;
-    padding: 10px 0;
+    padding: 5px 0;
     color: #333;
     z-index: 10;
 }
@@ -386,4 +397,18 @@ section {
 	.event--options{
 		display:none
 	}
+}
+
+.sponsors-logos {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sponsors-logos-slide img {
+    max-width: 150px; /* Adjust the logo size as needed */
+    margin: 0 10px;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: black;  /* Change the arrow color */
 }
