@@ -70,3 +70,10 @@
     top:5px;
     width:23px
 }
+@media (max-width: 1180px){
+    .header--logo img{
+        margin: 20px 0 0 -30px  !important;
+        width: 40%;
+        min-width: 80px;
+    }
+}

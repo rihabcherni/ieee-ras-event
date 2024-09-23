@@ -19,8 +19,11 @@
                 <div class="timeline-event" id="event<?= $index + 1 ?>">
                     <div class="event-circle"><?= $event[1] ?></div>
                     <div class="event-planning">
-                        <div class="event-time"> <?= $event[2] ?></div> 
-                        <?= $event[0] ?></div>
+                        <div class="event-time"> 
+                            <?= $event[2] ?>
+                        </div> 
+                        <?= $event[0] ?>
+                    </div>
                     </div>
                 <?php endforeach; ?>
             </div>

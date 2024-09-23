@@ -128,3 +128,49 @@
     background-color: #e74c3c;
 }
 
+@media only screen and (max-width: 768px){
+    .planning h2{
+        font-size:24px;
+    }
+    .timeline::before {
+        height: 90%;
+    }
+
+    .timeline-event {
+        padding: 6px;
+    }
+    
+    .timeline-event:nth-child(even) {
+        left: 50%;
+    }
+    
+    .timeline-event:nth-child(odd) {
+        left: 0;
+    }
+    
+    .timeline-event:nth-child(odd) .event-circle {
+        left: calc(100% + 20px);
+    }
+    
+    .timeline-event:nth-child(even) .event-circle {
+        right: calc(100% + 20px);
+    }
+    
+    .timeline-event .event-time {
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+    
+    .timeline-event .event-circle {
+        position: absolute;
+        top: 50%;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+    
+    .timeline-event .event-planning {
+        padding: 5px;
+        font-size: 12px;
+    }
+}

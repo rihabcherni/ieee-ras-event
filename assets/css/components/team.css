@@ -285,7 +285,25 @@
 @media(max-width:768px){
     .section-team .title h2{
         transition: 1s;
-        font-size: 2.8rem;
+        font-size: 24px;
+    }
+    .section-team .team-members{
+        height: 420px;
+        margin-top: -40px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-team .team-members .member-card{
+        position: relative;
+        height: 270px;
+        max-width: 225px;
+        border-radius: 26px;
+        margin: 0 12px;
+        overflow: hidden;
+        transition: 0.7s;
+        background-color: #ef73ff32;
     }
 }
 @media(max-width:440px){

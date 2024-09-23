@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     function updateTimer() {
         const now = new Date().getTime();
-        const eventDate = new Date('September 29, 2024 00:00:00').getTime();
+        const eventDate = new Date('Novermber 10, 2024 00:00:00').getTime();
         const distance = eventDate - now;
 
         if (distance < 0) {

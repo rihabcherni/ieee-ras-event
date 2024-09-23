@@ -17,17 +17,9 @@
     justify-content:center;
     margin:0 auto;
 }
-@media (max-width: 1180px){
-    .about{
-        max-width:100%
-    }
-}
-.about button{
-    margin-top: 20px;
-}
 .about--banner .title{
-    margin-bottom: -50px;
-    color: #ff96fd;
+    color: #9c199a;
+    font-size: 18px;
     font-weight: bold;
 }
 .about--banner{
@@ -64,7 +56,7 @@
 }
 .about--banner h2{
     position:relative;
-    font-size:68px;
+    font-size:50px;
     font-weight:900;
     line-height:1;
     z-index:1
@@ -112,60 +104,6 @@
     bottom:-90px;
     right:-12px
 }
-@media (max-width: 767px){
-    .about--banner{
-        height:305px
-    }
-    .about--banner::before{
-        top:0;
-        left:125px
-    }
-    .about--banner::after{
-        top:35px;
-        left:260px
-    }
-    .about--banner h2{
-        margin-top:10px;
-        font-size:44px
-    }
-    .about--banner h2::before{
-        top:28px;
-        left:168px
-    }
-    .about--banner h2::after{
-        top:163px;
-        left:163px
-    }
-    .about--banner img{
-        width:315px
-    }
-}
-@media (max-width: 600px){
-    .about--banner{
-        height:auto
-    }
-    .about--banner::before{
-        left:155px
-    }
-    .about--banner::after{
-        left:310px
-    }
-    .about--banner h2{
-        margin-top:0;
-        font-size:55px
-    }
-    .about--banner h2::before{
-        top:43px;
-        left:214px
-    }
-    .about--banner h2::after{
-        top:205px;
-        left:205px
-    }
-    .about--banner img{
-        display:none
-    }
-}
 
 .cards-container {
     display: grid;
@@ -182,7 +120,6 @@
     transform: translateX(-100%);
     opacity: 0;
     transition: transform 2s ease, opacity 1.5s ease;
-    height: 220px !important;
 }
 
 .about-card.c1 , .about-card.c4 {
@@ -196,12 +133,14 @@
     margin: -40px 0 40px;
 }
 .about-card h2 {
-    margin: 0;
+    margin:0 -10px;
     font-size: 20px;
+    text-align: center;
 }
 
 .about-card p {
-    margin-top: 10px;
+    text-align: center;
+    margin: 5px -10px 0;
     font-size: 14px;
 }
 
@@ -209,4 +148,137 @@
     font-size: 36px;
     margin-bottom: 15px;
     text-align: center;
+}
+
+
+@media (max-width: 1180px){
+    .about{
+        max-width:100%;
+    }
+}
+@media (max-width: 767px){
+    .about--banner{
+        height:305px
+    }
+    .about--banner::before{
+        top:0;
+        left:125px
+    }
+    .about--banner::after{
+        top:35px;
+        left:260px
+    }
+    .about--banner h2{
+        margin-top:10px;
+        font-size:34px
+    }
+    .about--banner h2::before{
+        top:28px;
+        left:168px
+    }
+    .about--banner h2::after{
+        top:163px;
+        left:163px
+    }
+    .about--banner img{
+        width:315px
+    }
+    .about--banner{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .about{
+        height:70%;  
+        max-width:100%;
+    }
+    .about--banner h2::before{
+        background-color:#8d008b40;
+    }
+    
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 40px;
+}
+.about-card h2 {
+    margin:0 -10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.about-card p {
+    text-align: center;
+    margin: 5px -10px 0;
+    font-size: 12px;
+}
+
+.icon {
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.about-button{
+    margin-top: -20px;
+}  
+}
+@media (max-width: 600px){
+    .about--banner{
+        height:auto
+    }
+    .about--banner::before{
+        left:155px
+    }
+    .about--banner::after{
+        left:310px
+    }
+    .about--banner h2{
+        margin-top:0;
+        font-size:24px
+    }
+    .about--banner h2::before{
+        top:43px;
+        left:214px
+    }
+    .about--banner h2::after{
+        top:205px;
+        left:205px
+    }
+    .about--banner img{
+        display:none
+    }
+    .about{
+        height:100%;
+        padding: 5px 20px ;
+    }
+    .text-about{
+        margin: 0 -30px 0 0 ;
+        font-size: 12px;
+    }
+    .cards-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .about-card h2 {
+        margin:0 -20px;
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .about-card p {
+        font-size: 10px;
+        text-align: center;
+        margin:5px -20px;
+    }
+    
+    .icon {
+        font-size: 18px;
+        margin-bottom: 5px;
+        text-align: center;
+    }  
+    .about-button{
+        margin-top: -20px;
+        font-size: 12px;
+    }  
 }

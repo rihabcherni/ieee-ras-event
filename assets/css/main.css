@@ -126,7 +126,15 @@
     text-align: center;
     z-index: 1000;
 }
-
+@media (max-width: 600px){   
+    .logos{
+        position: fixed; 
+        bottom: 30px; 
+        right: 5px; 
+        text-align: center;
+        z-index: 1000;
+    }     
+}
 .social-container {
     position: fixed; 
     bottom: 42%; 
