@@ -45,19 +45,19 @@
 }
 
 
-.section-team .title .arrows button{
+.arrows button{
     background: transparent;
     margin: 0px 15px;
     border: 0;
     border-radius: 12px;
 }
-.section-team .title .arrows button:hover i{
+.arrows button:hover i{
     color: #a406b9;
 }
-.section-team .title .arrows button:hover{
+.arrows button:hover{
     background: #fff;
 }
-.section-team .title .arrows button i{
+ .arrows button i{
     padding: 10px 30px;
     color: white;
     font-size: 1.3rem;

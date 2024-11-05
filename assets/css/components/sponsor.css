@@ -105,4 +105,8 @@
   
  
 
-  
+@media (max-width: 600px){
+  .sponsor img {
+   min-width: 150px;
+  }
+}

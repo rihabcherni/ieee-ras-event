@@ -35,8 +35,8 @@
           <div id="stars3"></div>
       </section>
         <div class="logos">
-          <img src="assets/img/logo/ras-logo.png" alt="logo RTC 1.0" width="57">
-          <img src="assets/img/logo/ras-ensit.png" alt="logo RTC 1.0" width="120">
+          <img class="img1" src="assets/img/logo/ras-logo.png" alt="logo RTC 1.0" width="57">
+          <img class="img2" src="assets/img/logo/ras-ensit.png" alt="logo RTC 1.0" width="120">
         </div>
             <div class="social-container">
               <ul class="social-icons">

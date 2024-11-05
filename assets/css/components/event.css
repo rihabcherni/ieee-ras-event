@@ -192,11 +192,11 @@ section {
 	}
 
 	.tab-nav-bar {
-		margin: 65px 20px 40px 25px;
+		margin: 65px 20px 0px 25px;
 	}
 
 	.tab {
-		padding: 15px 25px;
+		padding: 5px 25px;
 	}
 
 	.tab .row {
@@ -393,11 +393,7 @@ section {
     transition: all 1s ease;
 	transform: scale(1.02);
 }
-@media (max-width: 600px){
-	.event--options{
-		display:none
-	}
-}
+
 
 .sponsors-logos {
     width: 100%;
@@ -405,10 +401,165 @@ section {
 }
 
 .sponsors-logos-slide img {
-    max-width: 150px; /* Adjust the logo size as needed */
+    max-width: 250px; /* Adjust the logo size as needed */
     margin: 0 10px;
 }
 
 .slick-prev:before, .slick-next:before {
     color: black;  /* Change the arrow color */
+}
+
+.ev-image-container {
+    display: grid;
+	grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+}
+
+.ev-image-container img {
+	width: 100%;
+    height: auto;
+}
+
+
+.carousel, .carousel2 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    max-width: 950px; 
+    margin: auto;
+}
+
+.carousel-track, .carousel-track2 {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: max-content;
+}
+
+.carousel img,  .carousel2 img {
+    width: 300px; /* Adjust image size as needed */
+    margin-right: 15px;
+}
+button.prev, button.next {
+    position: absolute;
+    top: 10px; /* Position the buttons at the top */
+    transform: translateY(0); /* Remove any vertical translation */
+    background-color: rgba(153, 0, 133, 0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 1; /* Ensure buttons are above images */
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+button.prev:hover, button.next:hover {
+    background-color: rgba(153, 0, 133, 0.8);
+}
+.description-gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Space between the thumbnails and the main video */
+}
+
+#mainVideo {
+    width: 90%; /* Main video width */
+    max-width: 800px;
+	max-height: 400px;
+}
+
+.video-thumbnails-left,
+.video-thumbnails-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between the thumbnail videos */
+}
+
+.video-thumbnails-left video,
+.video-thumbnails-right video {
+    width: 100px; /* Set a fixed width for thumbnails */
+    cursor: pointer;
+    border-radius: 4px;
+	border:4px solid #c32bac;
+}
+@media (max-width: 600px){
+	.event--options{
+		display:none
+	}
+	.left-column{
+		display:none	
+	}
+	.ev-image-container{
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 0; 
+	}
+	.info .event-title, .info .event-title1 {
+		font-size: 1.4em !important;
+		position: relative;
+		color: #fff;
+		font-family: 'HyperOxide';
+		text-align: center;
+	}
+	.description-gallery {
+		display: block;
+		text-align: center;
+	  }
+	
+	  /* Main Video */
+	  video#mainVideo {
+		width: 100%;
+		max-width: 600px; /* Optional, to limit the max size */
+		margin: 0 auto 20px;
+	  }
+	
+	  /* Thumbnails as Grid View */
+	  .video-thumbnails-left, .video-thumbnails-right {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 10px;
+		margin-top: 10px;
+	  }
+	
+	  /* Make thumbnails a little smaller for mobile */
+	  .video-thumbnails-left video, .video-thumbnails-right video {
+		width: 100%;
+		max-height: 50px;
+		height: auto;
+	  }
+}
+
+.arrows-ce {
+    display: flex;               /* Use flexbox for alignment */
+    justify-content: center;     /* Center items horizontally */
+    align-items: center;         /* Center items vertically (optional) */
+    margin: 10px 0;             /* Add margin for spacing */
+}
+.arrow-sp{
+	display: none;
+}
+.pos-lr{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+@media (max-width: 600px){
+	.arrow-sp{
+		display: block;
+		display: flex;               /* Use flexbox for alignment */
+		justify-content: center;     /* Center items horizontally */
+		align-items: center;         /* Center items vertically (optional) */
+		margin: 10px 0;  
+	}
+	.pos-lr{
+		display: block;
+	}
 }

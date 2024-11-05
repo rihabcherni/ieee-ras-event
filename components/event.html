@@ -9,8 +9,8 @@
 				<ul class="tab-menu">
 					<li class="tab-btn active">Event Details</li>
 					<li class="tab-btn">Speakers</li>
-					<li class="tab-btn">Workshops</li>
-					<li class="tab-btn">Awards</li>
+					<li class="tab-btn">Ambassadors</li>
+					<li class="tab-btn">Gallery</li>
 					<li class="tab-btn">Sponsors</li>
 					<li class="tab-btn">FAQs</li>
 				</ul>
@@ -55,73 +55,118 @@
 			<div class="tab">
         <div class="info">
           <h2 class="event-title">Meet Our Speakers</h2>
+             <div class="arrows arrows-ce arrow-sp">
+              <button><i class="fa fa-arrow-left" id="left-arrow"  onclick="slide(-1, 1)"></i></button>
+              <button><i class="fa fa-arrow-right" id="right-arrow"  onclick="slide(1, 1)"></i></button>
+          </div>
           <div class="description">
-            <p>
-              Meet the experts and pioneers in robotics, AI, and Industry 6.0 who will share their insights and experiences. 
-              Our distinguished speakers come from diverse backgrounds, offering a wealth of knowledge in cutting-edge technology
-               and innovation.								
-            </p>
+          <div class="carousel">
+            <div class="carousel-track">
+              <img src="assets/img/speakers/1.jpg" alt="speaker1">
+              <img src="assets/img/speakers/2.jpg" alt="speaker2">
+              <img src="assets/img/speakers/3.jpg" alt="speaker3">
+            </div>
+          </div>
           </div>
         </div>
 			</div>
 
       <div class="tab">
         <div class="info">
-          <h2 class="event-title">Discover Our Workshops</h2>
+          <div  class="pos-lr">
+            <h2 class="event-title" style="margin: -10px;">Meet Our Ambassadors</h2>
+            <div class="arrows arrows-ce">
+              <button><i class="fa fa-arrow-left" id="left-arrow"  onclick="slide(-1, 2)"></i></button>
+              <button><i class="fa fa-arrow-right" id="right-arrow"  onclick="slide(1, 2)"></i></button>
+          </div>
+          </div>
           <div class="description">
-            <p>
-              Engage in hands-on workshops designed to deepen your understanding of AI, VR, and robotics. 
-              These sessions provide practical experience in applying advanced technologies to real-world industrial challenges.							
-            </p>
+            <div class="carousel2">
+              <div class="carousel-track2">
+                  <img src="assets/img/ambassador/1.jpg" alt="ambassador1">
+                  <img src="assets/img/ambassador/2.jpg" alt="ambassador2">
+                  <img src="assets/img/ambassador/3.jpg" alt="ambassador3">
+                  <img src="assets/img/ambassador/4.jpg" alt="ambassador4">
+                  <img src="assets/img/ambassador/5.jpg" alt="ambassador5">
+                  <img src="assets/img/ambassador/6.jpg" alt="ambassador6">
+                  <img src="assets/img/ambassador/7.jpg" alt="ambassador7">
+                  <img src="assets/img/ambassador/8.jpg" alt="ambassador8">
+                  <img src="assets/img/ambassador/9.jpg" alt="ambassador9">
+                  <img src="assets/img/ambassador/10.jpg" alt="ambassador10">
+                  <img src="assets/img/ambassador/11.jpg" alt="ambassador11">
+                  <img src="assets/img/ambassador/12.jpg" alt="ambassador12">
+                  <img src="assets/img/ambassador/13.jpg" alt="ambassador13">
+                  <img src="assets/img/ambassador/14.jpg" alt="ambassador14">
+                  <img src="assets/img/ambassador/15.jpg" alt="ambassador15">
+                  <img src="assets/img/ambassador/16.jpg" alt="ambassador16">
+                  <img src="assets/img/ambassador/17.jpg" alt="ambassador17">
+              </div>
+          </div>
+          
           </div>
         </div>
 			</div>
-
+      
       <div class="tab">
         <div class="info">
-          <h2 class="event-title">Awards Ceremony</h2>
+          <h2 class="event-title">Gallery</h2>
           <div class="description">
-            <p>
-              Recognizing excellence in robotics, the IEEE RAS Tunisia Conference will honor outstanding student 
-              branches and individuals. Awards will be presented for innovative projects and significant contributions
-               to the field, celebrating the best in robotics and technology.
-            </p>
+            <div class="description-gallery">
+              <!-- Left Thumbnails -->
+              <div class="video-thumbnails-left">
+                  <video src="assets/video/4.mp4" onclick="playVideo('assets/video/4.mp4')" muted></video>
+                  <video src="assets/video/5.mp4" onclick="playVideo('assets/video/5.mp4')" muted></video>
+                  <video src="assets/video/6.mp4" onclick="playVideo('assets/video/6.mp4')" muted></video>
+              </div>
+              
+              <!-- Main Video Display -->
+              <video id="mainVideo" src="assets/video/2.mp4" loop autoplay controls></video>
+              
+              <!-- Right Thumbnails -->
+              <div class="video-thumbnails-right">
+                  <video src="assets/video/1.mp4" onclick="playVideo('assets/video/1.mp4')" muted></video>
+                  <video src="assets/video/2.mp4" onclick="playVideo('assets/video/2.mp4')" muted></video>
+                  <video src="assets/video/3.mp4" onclick="playVideo('assets/video/3.mp4')" muted></video>
+              </div>
           </div>
+                 
+        </div>
+        
         </div>
 			</div>
-
       <div class="tab">
         <div class="info">
           <h2 class="event-title">Meet Our Sponsors</h2>
           <div class="description">
-            <p>
-              Our sponsors are leaders in technology and innovation, supporting the advancement of robotics and AI. 
-              Explore their contributions and learn how they are shaping the future of Industry 6.0.
-            </p>
             <article class="wrapper">
               <div class="sponsor">
                 <div class="sponsor__group">
                   <img src="assets/img/logo/ras-ensit.png" alt="RAS ENSIT">
                   <img src="assets/img/logo/ras-logo.png" alt="RAS Logo">
-                  <img src="assets/img/logo/rtc-logo.png" alt="RTC Logo">
+                  <img src="assets/img/sponsor/ccm.png" alt="ccm Logo">
+
                   <img src="assets/img/logo/ras-ensit.png" alt="RAS ENSIT">
                   <img src="assets/img/logo/ras-logo.png" alt="RAS Logo">
-                  <img src="assets/img/logo/rtc-logo.png" alt="RTC Logo">
+                  <img src="assets/img/sponsor/ccm.png" alt="ccm Logo">
+
                   <img src="assets/img/logo/ras-ensit.png" alt="RAS ENSIT">
                   <img src="assets/img/logo/ras-logo.png" alt="RAS Logo">
-                  <img src="assets/img/logo/rtc-logo.png" alt="RTC Logo">
+                  <img src="assets/img/sponsor/ccm.png" alt="ccm Logo">
+
                 </div>
             
                 <div aria-hidden="true" class="sponsor__group">
                   <img src="assets/img/logo/ras-ensit.png" alt="RAS ENSIT">
                   <img src="assets/img/logo/ras-logo.png" alt="RAS Logo">
-                  <img src="assets/img/logo/rtc-logo.png" alt="RTC Logo">
+                  <img src="assets/img/sponsor/ccm.png" alt="ccm Logo">
+
                   <img src="assets/img/logo/ras-ensit.png" alt="RAS ENSIT">
                   <img src="assets/img/logo/ras-logo.png" alt="RAS Logo">
-                  <img src="assets/img/logo/rtc-logo.png" alt="RTC Logo">
+                  <img src="assets/img/sponsor/ccm.png" alt="ccm Logo">
+
                   <img src="assets/img/logo/ras-ensit.png" alt="RAS ENSIT">
                   <img src="assets/img/logo/ras-logo.png" alt="RAS Logo">
-                  <img src="assets/img/logo/rtc-logo.png" alt="RTC Logo">
+                  <img src="assets/img/sponsor/ccm.png" alt="ccm Logo">
                 </div>
               </div>
             
@@ -129,25 +174,25 @@
                 <div class="sponsor__group">
                   <img src="assets/img/logo/ras-ensit.png" alt="RAS ENSIT">
                   <img src="assets/img/logo/ras-logo.png" alt="RAS Logo">
-                  <img src="assets/img/logo/rtc-logo.png" alt="RTC Logo">
+                  <img src="assets/img/sponsor/ccm.png" alt="ccm Logo">
                   <img src="assets/img/logo/ras-ensit.png" alt="RAS ENSIT">
                   <img src="assets/img/logo/ras-logo.png" alt="RAS Logo">
-                  <img src="assets/img/logo/rtc-logo.png" alt="RTC Logo">
+                  <img src="assets/img/sponsor/ccm.png" alt="ccm Logo">
                   <img src="assets/img/logo/ras-ensit.png" alt="RAS ENSIT">
                   <img src="assets/img/logo/ras-logo.png" alt="RAS Logo">
-                  <img src="assets/img/logo/rtc-logo.png" alt="RTC Logo">
+                  <img src="assets/img/sponsor/ccm.png" alt="ccm Logo">
                 </div>
             
                 <div aria-hidden="true" class="sponsor__group">
                   <img src="assets/img/logo/ras-ensit.png" alt="RAS ENSIT">
                   <img src="assets/img/logo/ras-logo.png" alt="RAS Logo">
-                  <img src="assets/img/logo/rtc-logo.png" alt="RTC Logo">
+                  <img src="assets/img/sponsor/ccm.png" alt="ccm Logo">
                   <img src="assets/img/logo/ras-ensit.png" alt="RAS ENSIT">
                   <img src="assets/img/logo/ras-logo.png" alt="RAS Logo">
-                  <img src="assets/img/logo/rtc-logo.png" alt="RTC Logo">
+                  <img src="assets/img/sponsor/ccm.png" alt="ccm Logo">
                   <img src="assets/img/logo/ras-ensit.png" alt="RAS ENSIT">
                   <img src="assets/img/logo/ras-logo.png" alt="RAS Logo">
-                  <img src="assets/img/logo/rtc-logo.png" alt="RTC Logo">
+                  <img src="assets/img/sponsor/ccm.png" alt="ccm Logo">
                 </div>
               </div>
             </article>
@@ -157,11 +202,8 @@
 
       <div class="tab">
         <div class="info">
-          <h2 class="event-title" style="margin: -20px 0;">FAQs</h2>
+          <h2 class="event-title" style="margin: 0;">FAQs</h2>
           <div class="description">
-            <p>
-              Get quick answers to common questions about the conference, to help you make the most of your experience.
-            </p>
           </div>
           <div class="faq-container">
             <div class="faq-tab">
@@ -216,4 +258,38 @@
 	</section>
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>let currentIndex1 = 0; // Index for the first carousel
+    let currentIndex2 = 0; // Index for the second carousel
+    
+    function slide(direction, carousel) {
+        const track = carousel === 1 ? document.querySelector('.carousel-track') : document.querySelector('.carousel-track2');
+        const items = carousel === 1 ? document.querySelectorAll('.carousel img') : document.querySelectorAll('.carousel2 img');
+        const itemWidth = window.innerWidth < 600 ? window.innerWidth : items[0].clientWidth + 10;
+    
+        if (carousel === 1) {
+            currentIndex1 += direction;
+    
+            // Use modulo for looping
+            currentIndex1 = (currentIndex1 + items.length) % items.length;
+            
+            track.style.transform = `translateX(-${currentIndex1 * itemWidth}px)`;
+        } else {
+            currentIndex2 += direction;
+    
+            // Use modulo for looping
+            currentIndex2 = (currentIndex2 + items.length) % items.length;
+            
+            track.style.transform = `translateX(-${currentIndex2 * itemWidth}px)`;
+        }
+    }
+    
+
+function playVideo(videoSrc) {
+    const mainVideo = document.getElementById('mainVideo');
+    mainVideo.src = videoSrc;
+    mainVideo.setAttribute("controls", "true"); // Ensure controls are visible
+    mainVideo.removeAttribute("muted"); // Ensure controls are visible
+    mainVideo.play(); // Play the video immediately
+}
+  </script>
 </li>

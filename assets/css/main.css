@@ -133,7 +133,13 @@
         right: 5px; 
         text-align: center;
         z-index: 1000;
-    }     
+    } 
+    .logos .img1{
+        width: 10%;
+    }  
+    .logos .img2{
+        width: 20%;
+    }    
 }
 .social-container {
     position: fixed; 

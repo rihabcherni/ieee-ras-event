@@ -26,6 +26,8 @@
       {
         "label": "off"
       }
-    ]
+    ],
+    "no-inline-styles": "off",
+    "disown-opener": "off"
   }
 }
