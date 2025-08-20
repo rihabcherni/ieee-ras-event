@@ -27,20 +27,19 @@ The website showcases the event, key information, speakers, the conference progr
 
 ---
 
-## 📸 Screenshots (13)
+## 📸 Screenshots
 
 <p align="center">
-  <img src="screenshots/1.PNG" alt="Screenshot 1" width="70%" /><br>
-  <img src="screenshots/2.PNG" alt="Screenshot 2" width="70%" /><br>
-  <img src="screenshots/3.PNG" alt="Screenshot 3" width="70%" /><br>
-  <img src="screenshots/4.PNG" alt="Screenshot 4" width="70%" /><br>
-  <img src="screenshots/5.PNG" alt="Screenshot 5" width="70%" /><br>
-  <img src="screenshots/6.PNG" alt="Screenshot 6" width="70%" /><br>
-  <img src="screenshots/7.PNG" alt="Screenshot 7" width="70%" /><br>
-  <img src="screenshots/8.PNG" alt="Screenshot 8" width="70%" /><br>
-  <img src="screenshots/9.PNG" alt="Screenshot 9" width="70%" /><br>
-  <img src="screenshots/10.PNG" alt="Screenshot 10" width="70%" /><br>
-  <img src="screenshots/11.PNG" alt="Screenshot 11" width="70%" /><br>
-  <img src="screenshots/12.PNG" alt="Screenshot 12" width="70%" /><br>
-  <img src="screenshots/13.PNG" alt="Screenshot 13" width="70%" /><br>
+  <img src="screenshots/1.PNG" alt="Screenshot 1" width="80%" /><br>
+  <img src="screenshots/2.PNG" alt="Screenshot 2" width="80%" /><br>
+  <img src="screenshots/3.PNG" alt="Screenshot 3" width="80%" /><br>
+  <img src="screenshots/4.PNG" alt="Screenshot 4" width="80%" /><br>
+  <img src="screenshots/5.PNG" alt="Screenshot 5" width="80%" /><br>
+  <img src="screenshots/6.PNG" alt="Screenshot 6" width="80%" /><br>
+  <img src="screenshots/7.PNG" alt="Screenshot 7" width="80%" /><br>
+  <img src="screenshots/8.PNG" alt="Screenshot 8" width="80%" /><br>
+  <img src="screenshots/9.PNG" alt="Screenshot 9" width="80%" /><br>
+  <img src="screenshots/10.PNG" alt="Screenshot 10" width="80%" /><br>
+  <img src="screenshots/11.PNG" alt="Screenshot 11" width="80%" /><br>
+  <img src="screenshots/12.PNG" alt="Screenshot 12" width="80%" /><br>
 </p>
